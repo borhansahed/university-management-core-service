@@ -15,4 +15,4 @@ router.post(
   FacultyController.insertIntoDB
 );
 
-export const facultyRoutes = router;
+export const FacultyRoute = router;

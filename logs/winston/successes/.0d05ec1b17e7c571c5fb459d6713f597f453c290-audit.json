@@ -29,6 +29,36 @@
             "date": 1695449763167,
             "name": "E:\\Course\\next_level\\project\\university-management-core-service\\logs\\winston\\successes\\phu-2023-23-09-12-success.log",
             "hash": "f293f02140bc0902387c1c4c77946ffa880634c8dccf8835a86d93b0d8eb0cb6"
+        },
+        {
+            "date": 1695531302285,
+            "name": "E:\\Course\\next_level\\project\\university-management-core-service\\logs\\winston\\successes\\phu-2023-24-09-10-success.log",
+            "hash": "5822d3ec101bad1170db7a6382c146c22774921f0caec44092cb9eb2a2f6a999"
+        },
+        {
+            "date": 1695532485671,
+            "name": "E:\\Course\\next_level\\project\\university-management-core-service\\logs\\winston\\successes\\phu-2023-24-09-11-success.log",
+            "hash": "17c96b26a80dcb37f72fb9e0dfaef001d76932295db9f7ac9caf9601a5628499"
+        },
+        {
+            "date": 1695610285460,
+            "name": "E:\\Course\\next_level\\project\\university-management-core-service\\logs\\winston\\successes\\phu-2023-25-09-08-success.log",
+            "hash": "63a83253ca51992e5a44f12108102df95dd6a8857753fe3baa94e7e7c02d062a"
+        },
+        {
+            "date": 1695610805664,
+            "name": "E:\\Course\\next_level\\project\\university-management-core-service\\logs\\winston\\successes\\phu-2023-25-09-09-success.log",
+            "hash": "65ee9dbaf2c4dfc8b42aa11a4dcdc43ac74a0d6dbe4b02c28b8c241d91498231"
+        },
+        {
+            "date": 1695619287070,
+            "name": "E:\\Course\\next_level\\project\\university-management-core-service\\logs\\winston\\successes\\phu-2023-25-09-11-success.log",
+            "hash": "9bfe9a97da7fe06d75897d0b08e4a11a58b2fdae7615c8d212556bb3eb9a7d05"
+        },
+        {
+            "date": 1695622436310,
+            "name": "E:\\Course\\next_level\\project\\university-management-core-service\\logs\\winston\\successes\\phu-2023-25-09-12-success.log",
+            "hash": "00c06d408d96009597335fcb5d2bef91d20c4685ef19bf6d7ebf2b9d58a62774"
         }
     ],
     "hashType": "sha256"
