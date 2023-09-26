@@ -1,0 +1,90 @@
+Tue Sep 26 2023 15:0:44 } [PH] error: 
+Invalid `transactionCourse.courseToPrerequisite.create()` invocation in
+E:\Course\next_level\project\university-management-core-service\src\app\modules\course\course.service.ts:14:54
+
+  11 
+  12 if (preRequisiteCourses && preRequisiteCourses.length > 0) {
+  13   preRequisiteCourses.forEach(async (item: { courseId: string }) => {
+→ 14     await transactionCourse.courseToPrerequisite.create(
+Transaction API error: Transaction already closed: Could not perform operation.
+Tue Sep 26 2023 15:1:11 } [PH] error: 
+Invalid `transactionCourse.courseToPrerequisite.create()` invocation in
+E:\Course\next_level\project\university-management-core-service\src\app\modules\course\course.service.ts:14:54
+
+  11 
+  12 if (preRequisiteCourses && preRequisiteCourses.length > 0) {
+  13   preRequisiteCourses.forEach(async (item: { courseId: string }) => {
+→ 14     await transactionCourse.courseToPrerequisite.create(
+Transaction API error: Transaction already closed: Could not perform operation.
+Tue Sep 26 2023 15:3:0 } [PH] error: 
+Invalid `transactionCourse.courseToPrerequisite.create()` invocation in
+E:\Course\next_level\project\university-management-core-service\src\app\modules\course\course.service.ts:14:54
+
+  11 
+  12 if (preRequisiteCourses && preRequisiteCourses.length > 0) {
+  13   preRequisiteCourses.forEach(async (item: { courseId: string }) => {
+→ 14     await transactionCourse.courseToPrerequisite.create(
+Transaction API error: Transaction already closed: Could not perform operation.
+Tue Sep 26 2023 15:4:32 } [PH] error: 
+Invalid `transactionCourse.courseToPrerequisite.create()` invocation in
+E:\Course\next_level\project\university-management-core-service\src\app\modules\course\course.service.ts:20:54
+
+  17 
+  18 if (preRequisiteCourses && preRequisiteCourses.length > 0) {
+  19   preRequisiteCourses.forEach(async (item: { courseId: string }) => {
+→ 20     await transactionCourse.courseToPrerequisite.create(
+Transaction API error: Transaction already closed: Could not perform operation.
+Tue Sep 26 2023 15:5:9 } [PH] error: 
+Invalid `transactionCourse.courseToPrerequisite.create()` invocation in
+E:\Course\next_level\project\university-management-core-service\src\app\modules\course\course.service.ts:20:54
+
+  17 
+  18 if (preRequisiteCourses && preRequisiteCourses.length > 0) {
+  19   preRequisiteCourses.forEach(async (item: { courseId: string }) => {
+→ 20     await transactionCourse.courseToPrerequisite.create(
+Transaction API error: Transaction already closed: Could not perform operation.
+Tue Sep 26 2023 15:6:4 } [PH] error: 
+Invalid `transactionCourse.courseToPrerequisite.create()` invocation in
+E:\Course\next_level\project\university-management-core-service\src\app\modules\course\course.service.ts:21:54
+
+  18 if (preRequisiteCourses && preRequisiteCourses.length > 0) {
+  19   preRequisiteCourses.forEach(async (item: { courseId: string }) => {
+  20     console.log(item);
+→ 21     await transactionCourse.courseToPrerequisite.create(
+Transaction API error: Transaction already closed: Could not perform operation.
+Tue Sep 26 2023 15:7:58 } [PH] error: 
+Invalid `transactionCourse.courseToPrerequisite.create()` invocation in
+E:\Course\next_level\project\university-management-core-service\src\app\modules\course\course.service.ts:21:54
+
+  18 if (preRequisiteCourses && preRequisiteCourses.length > 0) {
+  19   preRequisiteCourses.forEach(async (item: { courseId: string }) => {
+  20     console.log(item);
+→ 21     await transactionCourse.courseToPrerequisite.create(
+Transaction API error: Transaction already closed: Could not perform operation.
+Tue Sep 26 2023 15:8:13 } [PH] error: 
+Invalid `transactionCourse.courseToPrerequisite.create()` invocation in
+E:\Course\next_level\project\university-management-core-service\src\app\modules\course\course.service.ts:20:54
+
+  17 
+  18 if (preRequisiteCourses && preRequisiteCourses.length > 0) {
+  19   preRequisiteCourses.forEach(async (item: { courseId: string }) => {
+→ 20     await transactionCourse.courseToPrerequisite.create(
+Transaction API error: Transaction already closed: Could not perform operation.
+Tue Sep 26 2023 15:8:51 } [PH] error: 
+Invalid `transactionCourse.courseToPrerequisite.create()` invocation in
+E:\Course\next_level\project\university-management-core-service\src\app\modules\course\course.service.ts:19:54
+
+  16 
+  17 if (preRequisiteCourses && preRequisiteCourses.length > 0) {
+  18   preRequisiteCourses.forEach(async (item: { courseId: string }) => {
+→ 19     await transactionCourse.courseToPrerequisite.create(
+Transaction API error: Transaction already closed: Could not perform operation.
+Tue Sep 26 2023 15:17:35 } [PH] error: 
+Invalid `transactionCourse.courseToPrerequisite.create()` invocation in
+E:\Course\next_level\project\university-management-core-service\src\app\modules\course\course.service.ts:19:54
+
+  16 
+  17 if (preRequisiteCourses && preRequisiteCourses.length > 0) {
+  18   preRequisiteCourses.forEach(async (item: { courseId: string }) => {
+→ 19     await transactionCourse.courseToPrerequisite.create(
+Transaction API error: Transaction already closed: Could not perform operation.
