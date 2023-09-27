@@ -1,0 +1,9 @@
+Wed Sep 27 2023 15:9:59 } [PH] error: 
+Invalid `transactionCourse.courseToPrerequisite.create()` invocation in
+E:\Course\next_level\project\university-management-core-service\src\app\modules\course\course.service.ts:185:54
+
+  182 });
+  183 
+  184 createPrerequisiteCourse.forEach(async course => {
+→ 185   await transactionCourse.courseToPrerequisite.create(
+Transaction API error: Transaction already closed: Could not perform operation.

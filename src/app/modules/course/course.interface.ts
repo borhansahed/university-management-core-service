@@ -6,17 +6,26 @@ export type ICourse = {
   credits: number;
   preRequisiteCourses: {
     courseId: string;
+    isDeleted: boolean;
   }[];
 };
 export type ICourseCreateResponse =
   | (Course & {
-      preRequisite: {
+      preRequisite?: {
         courseId: string;
         preRequisiteId: string;
       }[];
-      preRequisiteFor: {
+      preRequisiteFor?: {
         courseId: string;
         preRequisiteId: string;
       }[];
     })
   | null;
+
+export type IPrequisite = {
+  courseId: string;
+  prerequisiteId: string;
+};
+export type ICourseFilterRequest = {
+  searchTerm?: string | undefined;
+};
