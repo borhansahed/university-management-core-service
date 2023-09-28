@@ -11,20 +11,14 @@ export type ICourse = {
 };
 export type ICourseCreateResponse =
   | (Course & {
-      preRequisite?: {
-        courseId: string;
-        preRequisiteId: string;
-      }[];
-      preRequisiteFor?: {
-        courseId: string;
-        preRequisiteId: string;
-      }[];
+      preRequisite?: IPrequisite[];
+      preRequisiteFor?: IPrequisite[];
     })
   | null;
 
 export type IPrequisite = {
   courseId: string;
-  prerequisiteId: string;
+  preRequisiteId: string;
 };
 export type ICourseFilterRequest = {
   searchTerm?: string | undefined;

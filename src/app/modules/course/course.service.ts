@@ -1,4 +1,4 @@
-import { Course } from '@prisma/client';
+import { Course, CourseFaculty } from '@prisma/client';
 import httpStatus from 'http-status';
 import ApiError from '../../../errors/ApiError';
 import { paginationHelpers } from '../../../helpers/paginationHelper';
@@ -55,6 +55,12 @@ const insertIntoDB = async (
             course: true,
           },
         },
+
+        faculties: {
+          include: {
+            faculty: true,
+          },
+        },
       },
     });
     return result;
@@ -108,6 +114,11 @@ const getAllFromDB = async (
           course: true,
         },
       },
+      faculties: {
+        include: {
+          faculty: true,
+        },
+      },
     },
 
     orderBy: {
@@ -143,6 +154,11 @@ const getByIdFromDB = async (id: string): Promise<Course | null> => {
       preRequisiteFor: {
         include: {
           course: true,
+        },
+      },
+      faculties: {
+        include: {
+          faculty: true,
         },
       },
     },
@@ -239,10 +255,59 @@ const deleteByIdFromDB = async (id: string): Promise<Course> => {
   return result;
 };
 
+const assignFaculties = async (
+  id: string,
+  payload: string[]
+): Promise<CourseFaculty[]> => {
+  await prisma.courseFaculty.createMany({
+    data: payload.map(facultyId => ({
+      courseId: id,
+      facultyId,
+    })),
+  });
+
+  const result = await prisma.courseFaculty.findMany({
+    where: {
+      courseId: id,
+    },
+    include: {
+      faculty: true,
+    },
+  });
+
+  return result;
+};
+const removeFaculties = async (
+  id: string,
+  payload: string[]
+): Promise<CourseFaculty[] | null> => {
+  await prisma.courseFaculty.deleteMany({
+    where: {
+      courseId: id,
+      facultyId: {
+        in: payload,
+      },
+    },
+  });
+
+  const result = await prisma.courseFaculty.findMany({
+    where: {
+      courseId: id,
+    },
+    include: {
+      faculty: true,
+    },
+  });
+
+  return result;
+};
+
 export const CourseService = {
   insertIntoDB,
   getAllFromDB,
   getByIdFromDB,
   updateOneInDB,
   deleteByIdFromDB,
+  assignFaculties,
+  removeFaculties,
 };

@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import { Request, RequestHandler, Response } from 'express';
 import httpStatus from 'http-status';
 import catchAsync from '../../../shared/catchAsync';
 import pick from '../../../shared/pick';
@@ -40,8 +40,32 @@ const getByIdFromDB = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const assignCourses: RequestHandler = catchAsync(async (req, res) => {
+  const { id } = req.params;
+  const result = await FacultyService.assignCourses(id, req.body.courses);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Courses assign  successfully',
+    data: result,
+  });
+});
+
+const removeCourses: RequestHandler = catchAsync(async (req, res) => {
+  const { id } = req.params;
+  const result = await FacultyService.removeCourses(id, req.body.courses);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Courses deleted  successfully',
+    data: result,
+  });
+});
+
 export const FacultyController = {
   insertIntoDB,
   getAllFromDB,
   getByIdFromDB,
+  assignCourses,
+  removeCourses,
 };

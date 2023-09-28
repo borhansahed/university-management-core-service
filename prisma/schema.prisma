@@ -85,6 +85,7 @@ model Faculty {
   gender       String
   bloodGroup   String
   designation  String
+  courses      CourseFaculty[]
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
@@ -128,6 +129,7 @@ model Course {
   updatedAt       DateTime               @updatedAt
   preRequisite    CourseToPrerequisite[] @relation("CourseToPrerequisite")
   preRequisiteFor CourseToPrerequisite[] @relation("PrerequisiteToCourse")
+  faculties CourseFaculty[]
 
   @@map("courses")
 }
@@ -139,5 +141,15 @@ model CourseToPrerequisite {
   course       Course @relation(fields: [courseId], references: [id], name: "CourseToPrerequisite")
   preRequisite Course @relation(fields: [preRequisiteId], references: [id], name: "PrerequisiteToCourse")
 
-  @@id([courseId, preRequisiteId])
+   @@id([courseId, preRequisiteId])
+   @@map("course_faculties")
+}
+
+
+model CourseFaculty {
+  courseId String
+  facultyId String
+  course Course @relation(fields: [courseId], references: [id])
+  faculty Faculty @relation(fields: [facultyId], references: [id])
+  @@id([courseId, facultyId])
 }
